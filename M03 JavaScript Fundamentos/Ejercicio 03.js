@@ -2,27 +2,30 @@
 /*3️⃣ EJERCICIO 03 3️⃣*/
 
 function sonIguales(x, y) {
-   // Retorna true si "x" e "y" son iguales.
-   // De lo contrario, retorna false.
-   // Tu código:
-}
+   if (x === y);
+   console.log(true);
+return (false);
 
-function tienenMismaLongitud(str1, str2) {
-   // Retorna true si los dos strings tienen la misma longitud.
-   // De lo contrario, retorna false.
-   // Tu código:
 }
+   
+   
+function tienenMismaLongitud(str1, str2) {
+     if (str1=== str2);
+     console.log(true);
+     return (false);
+}
+   
 
 function menosQueNoventa(num) {
-   // Retorna true si el argumento "num" es menor que noventa.
-   // De lo contrario, retorna false.
-   // Tu código:
+   if (num < menosQueNoventa);
+   console.log(true);
+   return (false);
 }
 
 function mayorQueCincuenta(num) {
-   // Retorna true si el argumento "num" es mayor que cincuenta.
-   // De lo contrario, retorna false.
-   // Tu código:
+   if (num >= mayorQueCincuenta);
+   console.log(true);
+   return (false);
 }
 
 function esPar(num) {
