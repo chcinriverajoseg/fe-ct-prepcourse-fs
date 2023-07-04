@@ -33,8 +33,10 @@ function multiplica(x, y) {
 }
 
 function obtenerResto(x, y) {
-   var obteneresto = y / x;
-   division;
+   return x % y
+   
+
+   
     
 }
 
