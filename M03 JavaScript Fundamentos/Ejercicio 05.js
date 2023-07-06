@@ -8,12 +8,20 @@ function esPositivo(num) {
    // Si el número es negativo ---> "Es negativo".
    // Si el número es 0, devuelve false.
    // Tu código:
-}
+   if ("7"){ // ---> "Es positivo"
+   }else if ("-7"){ // ---> "Es negativo"
+    } else ("0")
+    return false
+    
+
+   }
+   
 
 function agregarSimboloExclamacion(str) {
    // Agrega un símbolo de exclamación al final del string "str" y retórnalo
    // Ejemplo: "hello world" ---> "hello world!"
    // Tu código:
+   return ("str!")
 }
 
 function combinarNombres(nombre, apellido) {
@@ -37,6 +45,7 @@ function retornarPerimetro(lado) {
    // La función recibe como argumento la medida de un lado de un cuadrado.
    // Debes retornar su perímetro.
    // Tu código:
+   return ancho * alto
 }
 
 function areaDelTriangulo(base, altura) {
