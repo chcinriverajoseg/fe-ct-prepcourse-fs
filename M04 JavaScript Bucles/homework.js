@@ -5,64 +5,114 @@ function obtenerMayor(x, y) {
    // Retornar el número más grande.
    // Si son iguales, retornar cualquiera de los dos.
    // Tu código:
-  if (obtenerMayor =  x > y){
-   return x
-  } else if (y > x){
-   return y 
-  }else if (x === y){
-   return x
-  }
-   
-
-}
-
+   if (obtenerMayor= x > y){
+      return x
+   }else if (y > x){
+      return y
+   }else {
+      return x || y
+   }
+ }
 function mayoriaDeEdad(edad) {
    // Determinar si la persona puede ingresar al evento según su edad.
    // Si tiene 18 años ó más debe retornar el string: "Allowed".
    // Caso contrario: "Not allowed".
    // Tu código:
-}
+    if (edad ===18 || edad >18 ){
+     return "Allowed"
+    }else{
+      return "Not allowed"
+    }
+   
+ }
 
-function conection(status) {
-   // El argumento "status" representa el estado de conexión de un usuario.
-   // Si el estado es igual a 1, el usuario está "Online".
-   // Si el estado es igual a 2, el usuario está "Away".
-   // De lo contrario, presumimos que el usuario está "Offline".
-   // Retornar el estado de conexión del usuario.
-   // Tu código:
-}
 
-function saludo(idioma) {
-   // Retornar un saludo en tres diferentes lenguajes:
-   // Si "idioma" es "aleman", devuelve "Guten Tag!".
-   // Si "idioma" es "mandarin", devuelve "Ni Hao!".
-   // Si "idioma" es "ingles", devuelve "Hello!".
-   // Si "idioma" no es ninguno de los anteriores o es `undefined` devuelve "Hola!".
-   // Tu código:
-}
+   function conection(status) {
+      // El argumento "status" representa el estado de conexión de un usuario.
+      // Si el estado es igual a 1, el usuario está "Online".
+      // Si el estado es igual a 2, el usuario está "Away".
+      // De lo contrario, presumimos que el usuario está "Offline".
+      // Retornar el estado de conexión del usuario.
+      // Tu código:
+      if (status=== 1){
+         return "Online"
+      }else if (status=== 2){
+         return "Away"
+      }else if(status){
+         return "Offline"
+      }
+      }
+   
+   function saludo(idioma) {
+      // Retornar un saludo en tres diferentes lenguajes:
+      // Si "idioma" es "aleman", devuelve "Guten Tag!".
+      // Si "idioma" es "mandarin", devuelve "Ni Hao!".
+      // Si "idioma" es "ingles", devuelve "Hello!".
+      // Si "idioma" no es ninguno de los anteriores o es `undefined` devuelve "Hola!".
+      // Tu código:
+      if (idioma === "aleman"){
+         return "Guten Tag!";
+      }else if(idioma === "mandarin"){
+         return "Ni Hao!";
+      }else if( idioma === "ingles"){
+         return "Hello!";
+      }else {
+         return "Hola!";
+      }
+      
+      }
+   
+   
+   function colors(color) {
+      // La función recibe un color. Retornar el string correspondiente:
+      // En caso que el color recibido sea "blue"   --> "This is blue".
+      // En caso que el color recibido sea "red"    --> "This is red".
+      // En caso que el color recibido sea "green"  --> "This is green".
+      // En caso que el color recibido sea "orange" --> "This is orange".
+      // Si no es ninguno de esos colores           --> "Color not found".
+      // IMPORTANTE: utilizar el statement SWITCH.
+      // Tu código:
+      switch (color){
+         case "blue":
+            return "This is blue";
+            case "red":
+               return "This is red";
+               case "green":
+                  return "This is green"
+                  case "orange":
+                     return "This is orange"
+                     default:
+                        return "Color not found"
+                  
+      }
+   }
+   
+   
+   function esDiezOCinco(num) {
+      // Retornar true si "num" es 10 o 5.
+      // De lo contrario, retornar false.
+      // Tu código:
+      if (num === 10){
+         return true
+      }else if (num === 5){
+         return true
+      }else{
+         return false
+      }
+      }
 
-function colors(color) {
-   // La función recibe un color. Retornar el string correspondiente:
-   // En caso que el color recibido sea "blue"   --> "This is blue".
-   // En caso que el color recibido sea "red"    --> "This is red".
-   // En caso que el color recibido sea "green"  --> "This is green".
-   // En caso que el color recibido sea "orange" --> "This is orange".
-   // Si no es ninguno de esos colores           --> "Color not found".
-   // IMPORTANTE: utilizar el statement SWITCH.
-   // Tu código:
-}
-
-function esDiezOCinco(num) {
-   // Retornar true si "num" es 10 o 5.
-   // De lo contrario, retornar false.
-   // Tu código:
-}
-
-function estaEnRango(num) {
+   function estaEnRango(num) {
    // Retornar true si "num" es menor que 50 y mayor que 20.
    // De lo contrario, retornar false.
-   // Tu código:
-}
+   // Tu codigo:
+   if (num < 50 &&  num > 20){
+      return true
+   }else {
+      return false
+   }
+   }
+  
+
 
 function esEntero(num) {
    // Retornar true si "num" es un entero, ya sea positivo, negativo o cero.
@@ -71,6 +121,11 @@ function esEntero(num) {
    // Ejemplo: (-10) ---> true
    // De lo contrario, retorna false.
    // Tu código:
+   if (num === 1 || (-10) || 0.8){
+      return true
+   }else {
+      return false
+   }
 }
 
 function fizzBuzz(num) {
@@ -79,6 +134,14 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // De lo contrario, retorna false.
    // Tu código:
+   if (num /3){
+      return "fizz"
+   }else if (num /5){
+      return "buzz"
+   }else if (num /3,5){
+      return "fizzbuzz"
+   }
+
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -89,7 +152,8 @@ function operadoresLogicos(num1, num2, num3) {
    // Si todos los argumentos son cero, retornar ---> "Error".
    // Si no se cumple ninguna de las condiciones anteriores, retornar false.
    // Tu código:
-}
+
+   }
 
 function esPrimo(num) {
    // Retornar true si "num" es primo.
@@ -104,6 +168,11 @@ function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
+   if ("valor esverdadero"){
+      return "soy verdadero"
+   }else {
+      return "soy falso"
+   }
 }
 
 function tieneTresDigitos(num) {
